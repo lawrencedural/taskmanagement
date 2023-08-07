@@ -225,7 +225,7 @@ app.delete('/api/delete-task/:date/:task', async (req, res) => {
 
 
 // Start the server after connecting to MongoDB
-const port = process.env.SERVER_PORT || 3000;
+const port = 3000;
 connectToMongoDB().then(() => {
   app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
