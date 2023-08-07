@@ -1,5 +1,5 @@
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = process.env.MONGODB_URI;
+const uri = "mongodb+srv://seb:qwerty123@schedit.l1ebnzy.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(uri);
 
 const taskController = {}; // Define an empty object to hold the controller instance
