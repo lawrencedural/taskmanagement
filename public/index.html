@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+  <header>
+    <h1>Sched-It</h1>
+    <div class="header-buttons">
+      <ul>
+        <li><a href="registration"><button class="button button1">Register an Account</button></a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="container">
+        <h2>User Login</h2>
+        <!-- Add an ID attribute to the form for easier access in the JavaScript -->
+        <form id="loginForm" method="post" action="/checkLogin">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username" required>
+    
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    
+          <!-- Change the button type to "submit" to trigger the form submission -->
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Sebastien Naling, Lawrence Dural; 2023</p>
+  </footer>
+  <!-- Include the script.js file -->
+  <script src="script.js"></script>
+</body>
+</html>

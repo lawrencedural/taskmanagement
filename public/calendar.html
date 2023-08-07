@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="sched-it.css">
+<body>
+  <header>
+    <h1>Sched-It</h1>
+    <nav>
+      <div class="header-buttons">
+        <ul>
+          <li><a href="/logout"><button class="button button1">Logout</button></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h3 class="month-year"></h3>
+      <button id="prev-month" class="button button1">Previous Month</button>
+      <button id="next-month" class="button button1">Next Month</button>
+      <div class="calendar">
+        <!-- Calendar Days -->
+      </div>
+      <h2 id="task-list-header">Task-List :</h2>
+      <ul class="task-list" id="task-list">
+        <!-- Task List for the selected day -->
+      </ul>
+      <form id="task-form" style="display: none;">
+        <input type="text" id="new-task" placeholder="Enter a new task">
+        <button type="submit">Add Task</button>
+      </form>
+      <p id="click-display"></p>
+    </section>
+  </main>
+  <footer>
+    <p>Sebastien Naling, Lawrence Dural; 2023</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
