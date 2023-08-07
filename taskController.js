@@ -10,7 +10,7 @@ class TaskController {
 
   async connectToDatabase() {
     try {
-      const connectionString = process.env.MONGODB_URI;
+      const connectionString = "mongodb+srv://seb:qwerty123@schedit.l1ebnzy.mongodb.net/?retryWrites=true&w=majority";
       const mongoClient = new MongoClient(connectionString, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
