@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 let mongoClient;
 let taskCollection;
 let userCollection;
-const uri = mongodb+srv://seb:qwerty123@schedit.l1ebnzy.mongodb.net/?retryWrites=true&w=majority;
+const uri = "mongodb+srv://seb:qwerty123@schedit.l1ebnzy.mongodb.net/?retryWrites=true&w=majority";
 
 
 const store = new mongoDBSession({
